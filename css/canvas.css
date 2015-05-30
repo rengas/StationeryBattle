@@ -1,0 +1,32 @@
+canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+}
+
+#surfaceCanvas{
+    z-index:-1;
+}
+
+#itemCanvas{
+    z-index:0;
+}
+
+#itemRegion{
+    border: 3px solid #111111;
+    padding: 10px;
+    position: absolute;
+    top: 550px;
+    left: 10px;
+}
+
+#dropRegion {
+    border: 3px solid #111111;
+    padding: 10px;
+    position: absolute;
+    top: 700px;
+    left: 10px;
+    width: 400px;
+    height: 200px;
+}

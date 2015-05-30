@@ -1,0 +1,73 @@
+
+.force-wrap{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+
+.force-wrap, .force-value, .force-text {
+    /* The width and height of your image */
+    width: 155px; height: 30px;
+}
+
+.force-wrap, .force-value {
+    background: #333;
+}
+
+.force-completion
+{
+    width:0;
+    height: 30px;
+    overflow: hidden;
+    background: #333;
+}
+
+.force-text {
+    position: absolute;
+    top:0; left:0;
+
+    padding-top: 5px;
+
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.angle-wrap{
+    position:absolute;
+    left:0px;
+    top:200px;;
+}
+
+.angle-wrap, .angle-value, .angle-text {
+    /* The width and height of your image */
+    width: 155px; height: 30px;
+}
+
+.angle-wrap, .angle-value {
+    background: #333;
+}
+
+.angle-text {
+    position:absolute;
+    top:200; left:100;
+
+    padding-top: 5px;
+
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.angle-completion
+{
+    width:0;
+    height: 30px;
+    overflow: hidden;
+    background: #333;
+}
+
+
+

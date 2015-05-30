@@ -1,0 +1,161 @@
+body
+{       background-image:url('../imgs/background.jpg');
+}
+#Gameplay {
+    background-color:rgba(151,172,240,0.5);
+    position: relative;
+    display:block;
+    box-shadow: 0 -1px 2px #111111;
+    height: 768px;
+    width: 1024px;
+    top: 50%;
+    left:15%
+}
+#Gameplay h1{
+    font-size: 50px;
+    font-weight: normal;
+    left: 75%;
+    margin-left: -384px;
+    padding: 25px 0;
+    position: relative;
+    width: 540px;
+}
+.players {
+    margin: 40px auto 0;
+    overflow: hidden;
+    width: 840px;
+}
+.player {
+    border: 3px solid #ccc;
+    float: left;
+    margin: 30px;
+    min-height: 100px;
+    padding: 10px;
+    width: 220px;
+    transition: all 1.0s ease;
+}
+.player a {
+    display: inline-block;
+    height: 56px;
+    margin: 15px;
+    opacity: 1;
+    position: relative;
+    width: 75px;
+    user-select: none;
+    transition: all 0.5s ease;
+}
+.player a img {
+
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 4px #444;
+}
+
+.items {
+    margin: 10px;
+    border: 3px solid #ccc;
+    float: left;
+    min-height: 100px;
+    padding: 10px;
+    width: 220px;
+}
+.items a {
+    display: inline-block;
+    height: 135px;
+    margin: 10px;
+    opacity: 1;
+    position: relative;
+    width: 180px;
+    user-select: none;
+    transition: all 0.5s ease;
+}
+.items a img {
+
+    cursor: pointer;
+    display: block;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 4px #444;
+}
+
+/* Custom CSS3 rotate transformation */
+.items a:nth-child(1) img {
+    transform: rotate(-25deg);
+}
+.items a:nth-child(2) img {
+    transform: rotate(-20deg);
+}
+.items a:nth-child(3) img {
+    transform: rotate(-15deg);
+}
+.items a:nth-child(4) img {
+    transform: rotate(-10deg);
+}
+.items a:nth-child(5) img {
+    transform: rotate(-5deg);
+}
+.items a:nth-child(6) img {
+    transform: rotate(-25deg);
+}
+.items a:nth-child(7) img {
+    transform: rotate(-20deg);
+}
+.items a:nth-child(8) img {
+    transform: rotate(-15deg);
+}
+.items a:nth-child(9) img {
+    transform: rotate(-10deg);
+}
+.items a:nth-child(10) img {
+    transform: rotate(-5deg);
+}
+
+.items a:hover img {
+    z-index: 5;
+    transition: all 0.5s ease;
+    transform: rotate(0deg);
+}
+.items a.hidden {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    width: 0;
+}
+button {
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+
+    padding: 19px 38px;
+
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #e0c0e0;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.button:hover {
+    border-top-color: #6ab4e6;
+    background: #6ab4e6;
+    color: #960396;
+}
+.button:active {
+    border-top-color: #2599e6;
+    background: #2599e6;
+}

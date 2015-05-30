@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <link rel="stylesheet" type="text/css" href="Bar!.css">
+
+
+    <div class="force-wrap">
+        <div class="force-value" style="background-color: #0a0; width:0%;">
+            <div class="force-text">
+                Power
+            </div>
+        </div>
+    </div>
+    <div class="force-completion"></div>
+    </div>
+
+    <div class="force-the value"></div>
+    </div>
+    <div class="angle-wrap">
+        <div class="angle-value" style="background-color: #0a0; width:0%;">
+            <div class="angle-text">
+                Angle
+            </div>
+        </div>
+    </div>
+    <div class="angle-completion"></div>
+    </div>
+    <div class="angle-the"></div>
+    </div>
+
+
+</head>
+<body>
+
+
+        <script>
+            var myVar=setInterval(function(){PlayForceBar},50);
+
+
+            function PlayForceBar(playing)
+            {
+
+                window.setInterval(PlayForceBar(playing), 50);
+                if (playing==true){
+                if (document.getElementById("force-value").style.width <30){
+                    updateForce("forward");}
+                    else{
+                        updateForce("backward");
+                }
+            }}
+
+            function PlayAngleBar(playing)
+            { {
+                if (playing==true){
+                    window.setInterval(PlayAngleBar(playing), 50);
+                    if (document.getElementById("force-value").style.width <30){
+                        updateForce("forward");}
+                    else{
+                        updateForce("backward");
+                    }
+                }}
+
+            }
+
+            function getPlayerForce(playing)
+            {
+                if (playing == false){
+                    var mag =document.getElementById("force-value").style.width;
+                   printInfo(mag);
+
+                }
+            }
+
+            function getPlayerAngle(playing)
+            {
+                if (playing == false){
+                    var mag =document.getElementById("force-value").style.width;
+                    printInfo(mag);
+
+                }
+
+            }
+
+
+            function updateForce(direction){
+                if(direction === 'forward'){
+                    //increase width
+
+                    document.getElementById("force-value").style.width+=1; //Adjust the width to the width of your sections
+                }else{
+                    //decrease width
+                    document.getElementById("force-value").style.width-=1;
+                }
+            }
+
+            function updateAngle(direction){
+                if(direction === 'forward'){
+                    //increase width
+
+                    document.getElementById("angle-value").style.width+=1; //Adjust the width to the width of your sections
+                }else{
+                    //decrease width
+                    document.getElementById("angle-value").style.width-=1;
+                }
+            }
+
+            function printInfo(mag){
+            //<p>"You managed to score "mag""</p>
+            }
+
+            function myStopFunction()
+            {
+                clearInterval(myVar);
+            }
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+</body>
+
+<form action='' method='get' name='bar_form' position : left=0, top = 40>
+    <br>
+    <input type='button' value='Play Force' onclick='playing=true;PlayForceBar(playing);'>
+    <input type='button' value='Hit Force' onclick='playing=false;myStopFunction()'>
+
+</form>
+
+<form action='' method='get' name='bar_form'position : left=0, top = 540>
+    <br>
+    <input type='button' value='Play Angle' onclick='playing=true;PlayAngleBar(playing);'>
+    <input type='button' value='Hit Angle' onclick='playing=false;myStopFunction()'>
+
+</form>
+
+
+
+
+</html>

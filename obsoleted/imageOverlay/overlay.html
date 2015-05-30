@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>image Loading</title>
+    <!-- COMMENT BY CHENCHEN -->
+    <!-- inline style is bad, using a separate css file -->
+    <style>
+        canvas {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: transparent;
+        }
+        #background{
+            z-index:-1;
+        }
+        #object{
+            z-index:0;
+        }
+    </style>
+</head>
+<body>
+<!-- The canvas for the panning background -->
+<div>
+    <canvas id="background" width="512" height="512">
+        Your browser does not support canvas. Please try again with a different browser.
+    </canvas>
+    <canvas id="object" width="512" height="512">
+    </canvas>
+    <script src="overlay.js"></script>
+</div>
+</body>
+</html>

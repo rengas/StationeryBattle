@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stationery Battle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="Gameplay">
+
+    <div class="players">
+        <div class="player" id="drop_1"droppable="true" ondrop="player1drop(event)"><h2>Player 1</h2></div>
+        <div class="player" id="drop_2" droppable="true"ondrop="player2drop(event)"><h2>Player 2</h2></div>
+
+    <div class="items" droppable="true" ondrop="spaceDrop(event)">
+        <a id="1" draggable="true"><img width='50' src="imgs/eraser.png"></a>
+        <a id="2" draggable="true"><img width='50' src="imgs/eraser_final.png"></a>
+        <a id="3" draggable="true"><img width='50' src="imgs/liquidpapersas.png"></a>
+        <a id="4" draggable="true"><img width='50' src="imgs/pen.png"></a>
+        <a id="5" draggable="true"><img width='50' src="imgs/Pencil.png"></a>
+        <a id="6" draggable="true"><img width='50' src="imgs/pencil1.png"></a>
+        <a id="7" draggable="true"><img width='50' src="imgs/setTriangle.png"></a>
+        <a id="8" draggable="true"><img width='50' src="imgs/sharpener.png"></a>
+        <a id="9" draggable="true"><img width='50' src="imgs/stapler.png"></a>
+        <a id="10" draggable="true"><img width='50' src="imgs/glue.png"></a>
+    </div>
+ </div>
+   <button id="button" onclick="playbuttonpressed(event)"> Play</button>
+</div>
+<script src="js/itemsslist.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
